@@ -140,9 +140,8 @@ h1, h2 {
 
 #center-about {
     width: 33%;  
-    margin: 0 auto;
-    background-color: grey;
-}
+    margin: 0 auto; /* centering trick */
+    }
 
 hr {
     border-top: 1px solid #3a3a3a;
@@ -176,4 +175,26 @@ hr {
     text-align: right;
 }
 
+#welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #3a3a3a;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto; /* centering trick */
+}
+
+#circle-cover-bg {
+    background: url("../images/ethos-center-image.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
 /*  */
