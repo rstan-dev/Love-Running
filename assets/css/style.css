@@ -24,6 +24,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 
 }
 
@@ -64,9 +65,9 @@ h1, h2 {
 #hero-outer {
     height: 600px;
     width: 100%;  
-    overflow: hidden;
+    overflow: hidden;  /* hides top of pic behind header section */
     
-    position: relative;
+    position: relative; /* positions this relative to the screen, so the overlay box can be positioned absolute to this */
 }
 
 #cover-text, #cover-text h2 {
@@ -115,5 +116,34 @@ h1, h2 {
     bottom: 30px;
     right: 150px;
 
-    position: absolute;
+    position: absolute; /* positions this absolutely to the hero-outer wich is positioned relatively  */
 }
+
+/* Club Ethos section  */
+
+#club-ethos {
+    height: 600px; /* same section height as hero image for design consistency  */
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: blue;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: yellow;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+
+/*  */
