@@ -253,16 +253,49 @@ footer {
 #photos {
     clear: both;
     line-height: 0;
-    column-count: 4;
+    column-count: 4;  /* sets 4 images in a row */
     column-gap: 0;
 }
 
 #photos > img {
-    width: 100%;
+    width: 100%;  /* rezises each image to fill its column by 100% */
 }
 
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;          /* new width for this section */
+        height: 1200px;      /* accommodates the vertical layout  */
+        margin: 0 auto;      /* centers the content */
+
+    }
 
 
+    #welcome {                    /* creates more space around the heading */
+        padding: 30px;
+        margin: 0;
+
+    }
+
+    #left-about, #right-about {       /* stacks text */
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {                  /* pushes image below text */
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
 
 
 /*  */
